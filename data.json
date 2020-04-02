@@ -1,0 +1,90 @@
+{
+  "username": "@juliaceaser",
+  "user_preferences": {
+    "background_color": "white",
+    "text_color": "black",
+    "link_background_color": "green"
+  },
+  "link_list": [
+    {
+      "type": "classic",
+      "link_name": "google",
+      "link_to": "http://www.google.com"
+    },
+    {
+      "type": "classic",
+      "link_name": "instagram",
+      "link_to": "https://www.instagram.com/juliaceaser/"
+    },
+    {
+      "type": "music_player",
+      "song_name": "Happy",
+      "Artist": "Pharrell Williams",
+      "music_links": [
+        {
+          "platform": "spotify",
+          "link_to": "https://open.spotify.com/track/xxx"
+        },
+        {
+          "platform": "apple_music",
+          "link_to": "https://music.apple.com/track/xxx"
+        },
+        {
+          "platform": "youtube_music",
+          "link_to": "https://music.youtube.com/track/xxx"
+        },
+        {
+          "platform": "soundcloud",
+          "link_to": "https://open.soundcloud.com/track/xxx"
+        },
+        {
+          "platform": "deezer",
+          "link_to": "https://music.deezer.com/track/xxx"
+        },
+        {
+          "platform": "tidal",
+          "link_to": "https://music.tidal.com/track/xxx"
+        },
+        {
+          "platform": "bandcamp",
+          "link_to": "https://music.bandcamp.com/track/xxx"
+        }
+      ]
+    },
+    {
+      "type": "events",
+      "name": "show",
+      "platform": "songkick",
+      "events": [
+        {
+          "date": "2020-04-30",
+          "time": "14:00",
+          "location_name": "The Forum, Melbourne",
+          "link_to": "http://www.songkick.com.au",
+          "ticket_status": "available"
+        },
+        {
+          "date": "2020-05-01",
+          "time": "20:00",
+          "location_name": "Bar Wonder, Canberra",
+          "link_to": "http://www.songkick.com.au",
+          "ticket_status": "available"
+        },
+        {
+          "date": "2020-05-02",
+          "time": "20:00",
+          "location_name": "Opera Shout, Sydney",
+          "link_to": "http://www.songkick.com.au",
+          "ticket_status": "sold_out"
+        },
+        {
+          "date": "2020-05-03",
+          "time": "20:00",
+          "location_name": "Brisbane House, Brisbane",
+          "link_to": "http://www.songkick.com.au",
+          "ticket_status": "available"
+        }
+      ]
+    }
+  ]
+}

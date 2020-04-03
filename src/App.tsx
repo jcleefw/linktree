@@ -19,12 +19,17 @@ function App() {
 
   return (
     <div className="App">
-      <div className="page">
-        <Header profilePicUrl={data.profile_pic_url} username={data.username} />
+      <div className="container">
+        <div className="page">
+          <Header
+            profilePicUrl={data.profile_pic_url}
+            username={data.username}
+          />
 
-        <footer>
-          <ReactSVG src={logo} className="App-logo" />
-        </footer>
+          <footer>
+            <ReactSVG src={logo} className="App-logo" />
+          </footer>
+        </div>
       </div>
     </div>
   )

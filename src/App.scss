@@ -1,0 +1,34 @@
+$text-color: white;
+$background-color: #282c34;
+$link-background-color: green;
+
+* {
+  font-size: 16px;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.page {
+  background-color: $background-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $text-color;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  svg {
+    color: $text-color;
+  }
+}

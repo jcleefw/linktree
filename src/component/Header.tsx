@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProp> = ({ profilePicUrl, username }) => {
   return (
     <header className="header">
       <img src={profilePicUrl} className="profile-pic" alt={username} />
-      {username}
+      <span className="profile-username">{username}</span>
     </header>
   )
 }

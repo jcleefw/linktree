@@ -1,34 +1,33 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import { useFetch } from "use-http";
+import React from 'react'
+import logo from './logo.svg'
+import './App.scss'
+import { useFetch } from 'use-http'
+import Header from './component/Header'
+import { ReactSVG } from 'react-svg'
 
 function App() {
-  const { loading, error, data } = useFetch("data.json", {}, []);
+  const { loading, error, data } = useFetch('data.json', {}, [])
   if (loading) {
-    return <span>...</span>;
+    return <span>...</span>
   }
 
   if (error) {
-    return <div>{error}</div>;
+    console.log('here')
+    return <div>{error}</div>
   }
+  console.log(data.user_preferences.background_color)
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img
-          src={data.profile_pic_url}
-          className="App-logo"
-          alt={data.username}
-        />
-        {data.username}
-      </header>
+      <div className="page">
+        <Header profilePicUrl={data.profile_pic_url} username={data.username} />
 
-      <footer>
-        <img src={logo} className="App-logo" alt="logo" />
-      </footer>
+        <footer>
+          <ReactSVG src={logo} className="App-logo" />
+        </footer>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

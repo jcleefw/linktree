@@ -1,5 +1,4 @@
 import React from 'react'
-import { ReactSVG } from 'react-svg'
 
 type HeaderProp = {
   profilePicUrl: string

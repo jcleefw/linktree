@@ -21,11 +21,8 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="page">
-          <Header
-            profilePicUrl={data.profile_pic_url}
-            username={data.username}
-          />
-          <List data={data.link_list} />
+          <Header profilePicUrl={data.profilePicUrl} username={data.username} />
+          <List data={data.linkList} />
           <footer>
             <ReactSVG src={logo} className="App-logo" />
           </footer>

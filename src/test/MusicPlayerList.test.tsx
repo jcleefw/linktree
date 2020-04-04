@@ -32,11 +32,8 @@ describe('MusicPlayerListItem', () => {
     )
     const musicLinkElements = wrapper.find(MusicLinkElement)
     expect(musicLinkElements.length).toEqual(2)
-    expect(
-      musicLinkElements
-        .first()
-        .find('.platform-name')
-        .text()
-    ).toEqual('spotify')
+    expect(musicLinkElements.first().find('.platform-name').text()).toEqual(
+      'spotify'
+    )
   })
 })

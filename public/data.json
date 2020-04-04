@@ -3,7 +3,7 @@
   "profilePicUrl": "profilepic.png",
   "userPreferences": {
     "backgroundColor": "#282c34",
-    "textColor": "#282c34",
+    "textColor": "white",
     "linkBackgroundColor": "#39e09b",
     "theme": "dark"
   },

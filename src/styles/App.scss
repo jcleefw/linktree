@@ -40,7 +40,7 @@
 
 .header {
   display: flex;
-  margin-bottom: 4rem;
+  margin: 2rem auto;
   @include flex-column-center;
   .profile-pic {
     width: 100px;

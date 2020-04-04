@@ -1,5 +1,6 @@
 $expandable-color-dark: #555;
 $expandable-color-light: #f5f7f8;
+$expandable-text: #555;
 
 @mixin variable($variable, $property, $fallback) {
   // Fallback for browsers that don't support css vars

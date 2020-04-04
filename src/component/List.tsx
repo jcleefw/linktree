@@ -14,6 +14,9 @@ const List: React.FC<ListProps> = ({ data }) => {
       return <ClassicListItem key={key} itemData={item} />
     if (item.type === 'musicPlayer')
       return <MusicPlayerListItem key={key} itemData={item} />
+    // @todo To be implemented
+    // if (item.type === 'show')
+    //   return
     return
   })
 

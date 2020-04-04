@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon/social/bandsintown</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/social/bandsintown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="container" x="0" y="0" width="24" height="24"></rect>
+        <path d="M6.269006,0 L6.269006,19.0575333 L18.6862718,19.0575333 L18.6862718,18.4853902 L6.92208453,18.4853902 L6.92208453,13.546611 L23.8435068,13.546611 L23.8435068,13.6342222 L23.9552778,13.6342222 L23.9552778,24 L18.6862718,24 L18.6862718,23.9966303 L1,23.9966303 L1,0 L6.269006,0 Z M23.9552778,6.35785168e-06 L23.9552778,12.9393789 L18.6862718,12.9393789 L18.6862718,6.35785168e-06 L23.9552778,6.35785168e-06 Z M18.0598963,6.4000106 L18.0598963,12.9393789 L12.7908903,12.9393789 L12.7908903,6.4000106 L18.0598963,6.4000106 Z M12.1644511,6.4000106 L12.1644511,12.9393789 L6.89500008,12.9393789 L6.89500008,6.4000106 L12.1644511,6.4000106 Z" id="icon/social/bandsintown-logo" fill="currentColor"></path>
+    </g>
+</svg>

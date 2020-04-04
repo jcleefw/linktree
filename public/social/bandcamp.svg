@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon/social/bandcamp</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/social/bandcamp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="container" x="0" y="0" width="24" height="24"></rect>
+        <path d="M14.3322677,15.7790129 L5.57420323,15.7790129 L9.67259032,8.2257871 L18.4306548,8.2257871 L14.3322677,15.7790129 Z M12.0000097,-1.93548385e-05 C5.37097742,-1.93548385e-05 9.67741926e-06,5.37094839 9.67741926e-06,11.9999806 C9.67741926e-06,18.6290129 5.37097742,23.9999806 12.0000097,23.9999806 C18.6290419,23.9999806 24.0000097,18.6290129 24.0000097,11.9999806 C24.0000097,5.37094839 18.6290419,-1.93548385e-05 12.0000097,-1.93548385e-05 L12.0000097,-1.93548385e-05 Z" fill="currentColor"></path>
+    </g>
+</svg>

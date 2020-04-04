@@ -4,18 +4,21 @@ export type MusicLink = {
   linkTo: string
 }
 
+export type SongBasicProp = {
+  songName: string
+  artist: string
+  albumImage: string
+}
+
 export interface ClassicProps {
   type: 'classic'
   linkName: string
   linkTo: string
 }
 
-export interface MusicPlayerProps {
+export interface MusicPlayerProps extends SongBasicProp {
   type: 'musicPlayer'
-  songName: string
-  artist: string
   musicLinks: Array<MusicLink> | undefined
-  albumImage: string
 }
 export interface ShowProps {
   type: 'show'

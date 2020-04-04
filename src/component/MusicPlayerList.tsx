@@ -1,9 +1,9 @@
 import React from 'react'
-import LinkWrapper from './LinkWrapper'
-import { MusicPlayerProps, MusicLink } from '../types/LinkTypes'
+import { MusicLink, SongBasicProp } from '../types/LinkTypes'
 import { ReactSVG } from 'react-svg'
 import playbutton from '../assets/play-small.svg'
 import arrow from '../assets/down-arrow.svg'
+import ExpandableLinkWrapper from './ExpandableLinkWrapper'
 
 const MusicLinkElement: React.FC<MusicLink> = ({ key, platform, linkTo }) => {
   const platformName = platform.replace('_', ' ')
@@ -33,34 +33,18 @@ const generateMusicLinkItem = (musicLinks: Array<MusicLink>) => {
   })
 }
 
-interface ExpandableLinkWrapperProps {
-  tabTitle: string
-  playListData: MusicPlayerProps
-  children: React.ReactNode
-}
-
-const ExpandableLinkWrapper: React.FC<ExpandableLinkWrapperProps> = ({
-  children,
-  tabTitle,
-  playListData,
+const MusicPlayerHeader: React.FC<SongBasicProp> = ({
+  songName,
+  artist,
+  albumImage,
 }) => {
-  const { songName, artist, albumImage } = playListData
-
+  /* @todo: use onclick to toggle the opening of the tab */
   return (
-    <article className="expandable-list list-item">
-      <div className="list">
-        <div className="tab-title">{tabTitle}</div>
-      </div>
-      <div className="expanded-container">
-        {/* @todo: use onclick to toggle the opening of the tab */}
-        <header className="music-player-header">
-          <img className="player-image" src={albumImage} />
-          <ReactSVG className="play-button-icon" src={playbutton} />
-          <span className="title-description">{`${songName} - ${artist}`}</span>
-        </header>
-        <section>{children}</section>
-      </div>
-    </article>
+    <header className="music-player-header">
+      <img className="player-image" src={albumImage} />
+      <ReactSVG className="play-button-icon" src={playbutton} />
+      <span className="title-description">{`${songName} - ${artist}`}</span>
+    </header>
   )
 }
 
@@ -68,8 +52,16 @@ const MusicPlayerListItem: React.FC<{
   itemData: any
 }> = ({ itemData }) => {
   const { songName, artist, albumImage } = itemData
+  const header = (
+    <MusicPlayerHeader
+      songName={songName}
+      artist={artist}
+      albumImage={albumImage}
+    />
+  )
   return (
-    <ExpandableLinkWrapper tabTitle={'Music'} playListData={itemData}>
+    <ExpandableLinkWrapper tabTitle={'Music'}>
+      {header}
       {itemData.musicLinks && generateMusicLinkItem(itemData.musicLinks)}
     </ExpandableLinkWrapper>
   )

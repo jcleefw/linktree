@@ -1,24 +1,19 @@
 import React from 'react'
-import ClassicListItem, { ClassicProps } from './ClassicList'
+import ClassicListItem from './ClassicList'
 import '../styles/List.scss'
+import { ClassicProps, MusicPlayerProps, ShowProps } from '../types/LinkTypes'
+import MusicPlayerListItem from './MusicPlayerList'
 
-export interface ItemProps {
-  itemData: ClassicProps
-}
-
-interface MusicPlayerProps {}
-interface Show {}
-
-interface ListItemProps {}
 type ListProps = {
-  data: Array<ClassicProps | any>
+  data: Array<ClassicProps | MusicPlayerProps | ShowProps>
 }
 
 const List: React.FC<ListProps> = ({ data }) => {
   const listItem = data.map((item, key) => {
     if (item.type === 'classic')
       return <ClassicListItem key={key} itemData={item} />
-
+    if (item.type === 'musicPlayer')
+      return <MusicPlayerListItem key={key} itemData={item} />
     return
   })
 

@@ -1,18 +1,15 @@
 import React from 'react'
-import { ItemProps } from './List'
+import LinkWrapper from './LinkWrapper'
+import { ClassicProps } from '../types/LinkTypes'
 
-export type ClassicProps = {
-  type: 'classic'
-  link_name: string
-  link_to: string
-}
-
-const ClassicListItem: React.FC<ItemProps> = ({ itemData }) => {
-  const { link_name, link_to } = itemData
+const ClassicListItem: React.FC<{ itemData: ClassicProps }> = ({
+  itemData,
+}) => {
+  const { linkName, linkTo, type } = itemData
   return (
-    <a className="listItem classListItem" href={link_to} target="_blank">
-      <li className="list">{link_name}</li>
-    </a>
+    <LinkWrapper linkTo={linkTo} type={type}>
+      <li className="list">{linkName}</li>
+    </LinkWrapper>
   )
 }
 

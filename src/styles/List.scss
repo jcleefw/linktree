@@ -2,11 +2,10 @@
 
 .list-container {
   width: 100%;
-  overflow-x: hidden;
   flex-grow: 2;
 }
 
-.listItem {
+.list-item {
   text-decoration: none;
   color: $text-color;
   .list {
@@ -17,5 +16,44 @@
     list-style: none;
     text-transform: capitalize;
     margin: 10px 0;
+    border-radius: 5px;
+  }
+}
+
+.expandable-list {
+  padding-bottom: 0;
+  background-color: #f5f7f8;
+  border-radius: 5px;
+}
+
+.expanded-container {
+  min-height: 100px;
+  padding: 20px;
+}
+
+.music-player-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .player-image {
+    min-width: 25%;
+    max-width: 25%;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .play-button-icon {
+    width: 10%;
+    margin-right: 20px;
+  }
+  .title-description {
+    font-size: 24px;
+    margin: 0;
+    overflow: hidden;
+    height: 30px;
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

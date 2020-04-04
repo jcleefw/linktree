@@ -20,7 +20,8 @@
     {
       "type": "musicPlayer",
       "songName": "Happy",
-      "artist": "Pharrell Williams",
+      "artist": "Pharrell Williams, and others with super long name",
+      "albumImage": "/albumimage.jpeg",
       "musicLinks": [
         {
           "platform": "spotify",

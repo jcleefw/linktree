@@ -23,7 +23,7 @@ function App() {
         <div className="page">
           <Header profilePicUrl={data.profilePicUrl} username={data.username} />
           <List data={data.linkList} />
-          <footer>
+          <footer className="footer">
             <ReactSVG src={logo} className="App-logo" />
           </footer>
         </div>

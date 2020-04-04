@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.scss'
 import { useFetch } from 'use-http'
-import Header from './component/Header'
 import { ReactSVG } from 'react-svg'
+import logo from './logo.svg'
+import './styles/App.scss'
 
+import Header from './component/Header'
 function App() {
   const { loading, error, data } = useFetch('data.json', {}, [])
   if (loading) {

@@ -2,6 +2,12 @@ $text-color: white;
 $background-color: #282c34;
 $link-background-color: green;
 
+@mixin flex-column-center {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   font-size: 16px;
   box-sizing: border-box;
@@ -17,9 +23,7 @@ $link-background-color: green;
   background-color: $background-color;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-column-center;
   color: $text-color;
   padding: 20px;
 }
@@ -29,7 +33,7 @@ $link-background-color: green;
   width: 100%;
   max-width: 800px;
   display: flex;
-  flex-direction: column;
+  @include flex-column-center;
   justify-content: space-between;
   border: 1px solid #444;
   padding: 20px;
@@ -37,8 +41,7 @@ $link-background-color: green;
 
 .header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
   .profile-pic {
     width: 100px;
     height: 100px;

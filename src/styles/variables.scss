@@ -1,4 +1,8 @@
-$text-color: #222;
-$background-color: #282c34;
-$link-background-color: #39e09b;
-$icon-color: #555;
+$dark-theme-icon-color: #555;
+$light-theme-icon-color: #bbb;
+
+@mixin variable($variable, $property, $fallback) {
+  // Fallback for browsers that don't support css vars
+  #{$property}: $fallback;
+  #{$property}: var(--#{$variable});
+}

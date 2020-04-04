@@ -6,9 +6,14 @@ import './styles/App.scss'
 
 import Header from './component/Header'
 import List from './component/List'
+import cx from 'classnames'
+import { generateUserTheme, useTheme } from './common/theme'
 
-function App() {
+const App = () => {
   const { loading, error, data } = useFetch('data.json', {}, [])
+  const theme = generateUserTheme(data)
+  useTheme(theme)
+
   if (loading) {
     return <span>...</span>
   }
@@ -20,10 +25,10 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="page">
+        <div className={cx('page', data.userPreferences.theme)}>
           <Header profilePicUrl={data.profilePicUrl} username={data.username} />
           <List data={data.linkList} />
-          <footer className="footer">
+          <footer className={cx('footer', data.userPreferences.theme)}>
             <ReactSVG src={logo} className="App-logo" />
           </footer>
         </div>

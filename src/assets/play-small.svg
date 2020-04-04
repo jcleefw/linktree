@@ -8,7 +8,7 @@
             <g id="player">
                 <g transform="translate(16.000000, 58.000000)">
                     <g id="icon/play-small" transform="translate(80.000000, 20.000000)">
-                        <circle id="Oval" fill="#39E09B" cx="12" cy="12" r="12"></circle>
+                        <circle id="Oval" fill="currentColor" cx="12" cy="12" r="12"></circle>
                         <polygon id="Triangle" fill="#F5F7F8" transform="translate(12.800000, 12.000000) rotate(90.000000) translate(-12.800000, -12.000000) " points="12.8 8 17.6 16 8 16"></polygon>
                     </g>
                 </g>

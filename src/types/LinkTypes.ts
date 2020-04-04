@@ -28,3 +28,7 @@ export interface ShowProps {
   linkTo: string
   ticketState: 'available' | 'sold_out'
 }
+
+export type Theme = {
+  theme: 'dark' | 'light'
+}

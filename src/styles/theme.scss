@@ -1,0 +1,25 @@
+.dark {
+  .music-link-item {
+    border-color: lighten($dark-theme-icon-color, 50);
+  }
+  .social-icon {
+    color: $dark-theme-icon-color;
+  }
+  .App-logo svg {
+    color: white;
+  }
+}
+
+.light {
+  .music-link-item {
+    border-color: darken($light-theme-icon-color, 50);
+  }
+
+  .social-icon {
+    color: $light-theme-icon-color;
+  }
+
+  .App-logo svg {
+    color: #222222;
+  }
+}

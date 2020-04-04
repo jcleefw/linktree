@@ -2,9 +2,10 @@
   "username": "@juliaceaser",
   "profilePicUrl": "profilepic.png",
   "userPreferences": {
-    "backgroundColor": "white",
-    "textColor": "black",
-    "linkBackgroundColor": "green"
+    "backgroundColor": "#282c34",
+    "textColor": "#282c34",
+    "linkBackgroundColor": "#39e09b",
+    "theme": "dark"
   },
   "linkList": [
     {

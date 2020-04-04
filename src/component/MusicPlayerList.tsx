@@ -1,5 +1,5 @@
 import React from 'react'
-import { MusicLink, SongBasicProp } from '../types/LinkTypes'
+import { MusicLink, SongBasicProp, Theme } from '../types/LinkTypes'
 import { ReactSVG } from 'react-svg'
 import playbutton from '../assets/play-small.svg'
 import arrow from '../assets/down-arrow.svg'
@@ -12,7 +12,7 @@ const MusicLinkElement: React.FC<MusicLink> = ({ key, platform, linkTo }) => {
   return (
     // @todo: use onclick to handle when user selection platform to play music
     <div className="music-link-item" key={key}>
-      <a href={linkTo} target="_blank">
+      <a href={linkTo} target="_blank" rel="noopener noreferrer">
         <ReactSVG
           className="social-icon"
           src={`/social/${platformImageUrl}.svg`}

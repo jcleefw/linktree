@@ -1,8 +1,9 @@
 import React from 'react'
 import cx from 'classnames'
+import { linkType } from '../types/LinkTypes'
 
 type LinkWrapper = {
-  type: 'classic' | 'musicPlayer' | 'shows'
+  type: linkType
   linkTo: string
   children: React.ReactNode
 }

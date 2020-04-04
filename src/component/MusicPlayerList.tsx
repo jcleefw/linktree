@@ -1,17 +1,17 @@
 import React from 'react'
-import { MusicLink, SongBasicProp, Theme } from '../types/LinkTypes'
+import { MusicLink, SongBasicProp } from '../types/LinkTypes'
 import { ReactSVG } from 'react-svg'
 import playbutton from '../assets/play-small.svg'
 import arrow from '../assets/down-arrow.svg'
 import ExpandableLinkWrapper from './ExpandableLinkWrapper'
 
-const MusicLinkElement: React.FC<MusicLink> = ({ key, platform, linkTo }) => {
+export const MusicLinkElement: React.FC<MusicLink> = ({ platform, linkTo }) => {
   const platformName = platform.replace('_', ' ')
   const platformImageUrl = platform.replace('_', '-')
 
   return (
     // @todo: use onclick to handle when user selection platform to play music
-    <div className="music-link-item" key={key}>
+    <div className="music-link-item">
       <a href={linkTo} target="_blank" rel="noopener noreferrer">
         <ReactSVG
           className="social-icon"
@@ -41,7 +41,7 @@ const MusicPlayerHeader: React.FC<SongBasicProp> = ({
   /* @todo: use onclick to toggle the opening of the tab */
   return (
     <header className="music-player-header">
-      <img className="player-image" src={albumImage} />
+      <img className="player-image" src={albumImage} alt={songName} />
       <ReactSVG className="play-button-icon" src={playbutton} />
       <span className="title-description">{`${songName} - ${artist}`}</span>
     </header>

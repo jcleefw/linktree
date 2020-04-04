@@ -1,3 +1,5 @@
+export type linkType = 'classic' | 'musicPlayer' | 'shows'
+
 export type MusicLink = {
   key: number
   platform: string
@@ -11,7 +13,7 @@ export type SongBasicProp = {
 }
 
 export interface ClassicProps {
-  type: 'classic'
+  type: linkType
   linkName: string
   linkTo: string
 }

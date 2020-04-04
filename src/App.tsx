@@ -3,7 +3,6 @@ import { useFetch } from 'use-http'
 import { ReactSVG } from 'react-svg'
 import logo from './logo.svg'
 import './styles/App.scss'
-
 import Header from './component/Header'
 import List from './component/List'
 import cx from 'classnames'

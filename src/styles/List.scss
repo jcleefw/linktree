@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+.list-container {
+  width: 100%;
+  overflow-x: hidden;
+  flex-grow: 2;
+}
+
+.listItem {
+  text-decoration: none;
+  color: $text-color;
+  .list {
+    padding: 20px 0;
+    color: inherit;
+    background: $link-background-color;
+    cursor: pointer;
+    list-style: none;
+    text-transform: capitalize;
+  }
+}

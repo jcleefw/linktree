@@ -5,6 +5,8 @@ import logo from './logo.svg'
 import './styles/App.scss'
 
 import Header from './component/Header'
+import List from './component/List'
+
 function App() {
   const { loading, error, data } = useFetch('data.json', {}, [])
   if (loading) {
@@ -12,10 +14,8 @@ function App() {
   }
 
   if (error) {
-    console.log('here')
     return <div>{error}</div>
   }
-  console.log(data.user_preferences.background_color)
 
   return (
     <div className="App">
@@ -25,7 +25,7 @@ function App() {
             profilePicUrl={data.profile_pic_url}
             username={data.username}
           />
-
+          <List data={data.link_list} />
           <footer>
             <ReactSVG src={logo} className="App-logo" />
           </footer>

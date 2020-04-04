@@ -19,7 +19,7 @@ const MusicLinkElement: React.FC<MusicLink> = ({ key, platform, linkTo }) => {
         />
       </a>
       <span className="platform-name">{platformName}</span>
-      <ReactSVG className="right-arrow" src={arrow} />
+      <ReactSVG className="arrow right-arrow" src={arrow} />
     </div>
   )
 }

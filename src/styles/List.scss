@@ -11,24 +11,34 @@
   .list {
     padding: 20px 0;
     color: inherit;
-    @include variable(link-background-color, background-color, #39e09b);
+    @include variable(link-background-color, background-color, tomato);
+    @include variable(link-background-color, border-color, tomato);
     cursor: pointer;
     list-style: none;
     text-transform: capitalize;
     margin: 10px 0;
     border-radius: 5px;
+    border: 1px solid;
+
+    &:hover {
+      border: 1px solid;
+      @include variable(link-background-color, border-color, tomato);
+      @include variable(container-background-color, background-color, tomato);
+      @include variable(link-background-color, color, tomato);
+      cursor: pointer;
+    }
   }
 }
 
 .expandable-list {
   padding-bottom: 0;
-  background-color: #f5f7f8;
   border-radius: 5px;
 }
 
 .expanded-container {
   min-height: 100px;
   padding: 20px;
+  background-color: $expandable-color-light;
 }
 
 .music-player-header {
@@ -69,17 +79,34 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid;
+  color: $expandable-color-dark;
+  border-color: lighten($expandable-color-dark, 50);
+
+  &:hover {
+    background: $expandable-color-dark;
+    color: $expandable-color-light;
+    .social-icon {
+      color: $expandable-color-light;
+    }
+    cursor: pointer;
+  }
 
   .platform-name {
     text-transform: capitalize;
     flex-grow: 2;
     text-align: left;
+    color: inherit;
   }
   .social-icon {
     flex-grow: 1;
     margin-right: 20px;
     width: 40px;
     max-width: 40px;
+    color: $expandable-color-dark;
+  }
+
+  .arrow {
+    color: inherit;
   }
 }
 

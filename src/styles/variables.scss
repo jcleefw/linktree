@@ -1,5 +1,5 @@
-$dark-theme-icon-color: #555;
-$light-theme-icon-color: #bbb;
+$expandable-color-dark: #555;
+$expandable-color-light: #f5f7f8;
 
 @mixin variable($variable, $property, $fallback) {
   // Fallback for browsers that don't support css vars

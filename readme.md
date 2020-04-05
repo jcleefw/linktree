@@ -12,6 +12,23 @@ This is an app to display link like Linktr.ee
 
 `yarn test`
 
+## How to modify data to test theme
+
+Mock data are stored in `data.json` in `public` folder.
+
+You can change the user preferences of theme by specifying the colors in `hex` value.
+
+```
+"userPreferences": {
+   "backgroundColor": "#282c34",
+   "textColor": "white",
+   "linkBackgroundColor": "#39e09b",
+   "theme": "dark"
+},
+```
+
+The theme value doesn't do much except for changing the linktree logo between `light` and `dark` theme
+
 ## Completed Stories
 
 - [x] Style overall layout according to mock
@@ -21,11 +38,12 @@ This is an app to display link like Linktr.ee
 - [x] responsive page
 - [x] Create Class list
 - [x] Create Music Player List
+- [x] handle link items onClick toggle, and links
 
 ## TODO Stories
 
+- [ ] setup presets theme enum for user to select instead of passing in hex value for coloring
 - [ ] Create Show List
-- [ ] handle link items onClick toggle, and links
 - [ ] Setup test for all components
 - [ ] Organize assets properly in one location
 - [ ] error handling

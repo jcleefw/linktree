@@ -43,7 +43,7 @@ The theme value doesn't do much except for changing the linktree logo between `l
 ## TODO Stories
 
 - [ ] setup presets theme enum for user to select instead of passing in hex value for coloring
-- [ ] Create Show List
+- [ ] Create Show List using the `ExpandableLinkWrapper` component
 - [ ] Setup test for all components
 - [ ] Organize assets properly in one location
 - [ ] error handling

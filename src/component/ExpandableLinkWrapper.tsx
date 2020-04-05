@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './Button'
+import cx from 'classnames'
 
 interface ExpandableLinkWrapperProps {
   tabTitle: string
@@ -10,10 +11,17 @@ const ExpandableLinkWrapper: React.FC<ExpandableLinkWrapperProps> = ({
   children,
   tabTitle,
 }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const onClickHandler = (event: MouseEvent) => {
+    event.preventDefault()
+    setIsOpen(!isOpen)
+  }
+
   return (
     <article className="expandable-list list-item">
-      <Button buttonText={tabTitle} />
-      <div className="expanded-container">
+      <Button buttonText={tabTitle} onClick={onClickHandler} />
+      <div className={cx('expanded-container', { ['open']: isOpen })}>
         <section>{children}</section>
       </div>
     </article>

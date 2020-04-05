@@ -1,25 +1,23 @@
 import React from 'react'
-import cx from 'classnames'
-import { linkType } from '../types/LinkTypes'
 
 type LinkWrapper = {
-  type: linkType
   linkTo: string
   children: React.ReactNode
+  className?: string
+  target: '_blank' | 'self'
 }
 
-enum ListClassName {
-  classic = 'classListItem',
-  musicPlayer = 'musicPlayerListItem',
-  shows = 'showListItem',
-}
-
-const LinkWrapper: React.FC<LinkWrapper> = ({ linkTo, children, type }) => {
+const LinkWrapper: React.FC<LinkWrapper> = ({
+  linkTo,
+  children,
+  className,
+  target = '_blank',
+}) => {
   return (
     <a
-      className={cx('list-item', { [ListClassName[type]]: type })}
+      className={className}
       href={linkTo}
-      target="_blank"
+      target={target}
       rel="noopener noreferrer"
     >
       {children}

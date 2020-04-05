@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 interface ExpandableLinkWrapperProps {
   tabTitle: string
@@ -11,9 +12,7 @@ const ExpandableLinkWrapper: React.FC<ExpandableLinkWrapperProps> = ({
 }) => {
   return (
     <article className="expandable-list list-item">
-      <div className="list">
-        <div className="tab-title">{tabTitle}</div>
-      </div>
+      <Button buttonText={tabTitle} />
       <div className="expanded-container">
         <section>{children}</section>
       </div>

@@ -11,6 +11,9 @@ export const MusicLinkElement: React.FC<MusicLink> = ({ platform, linkTo }) => {
 
   return (
     // @todo: use onclick to handle when user selection platform to play music
+    // 2 types of onclick,
+    // 1 on the item list
+    // 1 on the plaform logo
     <div className="music-link-item">
       <a href={linkTo} target="_blank" rel="noopener noreferrer">
         <ReactSVG

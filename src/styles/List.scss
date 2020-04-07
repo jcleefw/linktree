@@ -8,6 +8,8 @@
 .list-item {
   text-decoration: none;
   @include variable(text-color, color, white);
+  width: 100%;
+
   .list {
     padding: 20px 0;
     color: inherit;
@@ -21,6 +23,7 @@
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
+    width: inherit;
 
     &:hover {
       border: 1px solid;

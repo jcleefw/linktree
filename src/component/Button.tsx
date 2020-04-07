@@ -2,14 +2,14 @@ import React from 'react'
 
 type ButtonProps = {
   buttonText: string
-  onClick?: any
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 const Button: React.FC<ButtonProps> = ({ buttonText, onClick }) => {
   return (
-    <div className="list" onClick={onClick}>
+    <button className="list" onClick={onClick}>
       <div className="button-text">{buttonText}</div>
-    </div>
+    </button>
   )
 }
 

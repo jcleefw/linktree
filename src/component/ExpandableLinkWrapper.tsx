@@ -13,7 +13,7 @@ const ExpandableLinkWrapper: React.FC<ExpandableLinkWrapperProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const onClickHandler = (event: MouseEvent) => {
+  const onClickHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()
     setIsOpen(!isOpen)
   }

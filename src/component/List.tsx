@@ -5,7 +5,7 @@ import { ClassicProps, MusicPlayerProps, ShowProps } from '../types/LinkTypes'
 import MusicPlayerListItem from './MusicPlayerList'
 
 type ListProps = {
-  data: Array<ClassicProps | MusicPlayerProps | ShowProps>
+  data: Array<any>
 }
 
 const List: React.FC<ListProps> = ({ data }) => {

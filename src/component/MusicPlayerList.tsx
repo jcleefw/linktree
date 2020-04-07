@@ -1,5 +1,5 @@
 import React from 'react'
-import { MusicLink, SongBasicProp } from '../types/LinkTypes'
+import { MusicLink, SongBasicProp, MusicPlayerProps } from '../types/LinkTypes'
 import { ReactSVG } from 'react-svg'
 import playbutton from '../assets/play-small.svg'
 import arrow from '../assets/down-arrow.svg'
@@ -52,7 +52,7 @@ const MusicPlayerHeader: React.FC<SongBasicProp> = ({
 }
 
 const MusicPlayerListItem: React.FC<{
-  itemData: any
+  itemData: MusicPlayerProps
 }> = ({ itemData }) => {
   const { songName, artist, albumImage } = itemData
   const header = (
